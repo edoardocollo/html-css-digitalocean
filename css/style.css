@@ -1,3 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
 
 h1 {
   font-size: 47px;
@@ -61,11 +64,17 @@ nav {
 #navbar_container ul li a {
   text-decoration: none;
   color: black;
-  padding: 0 25px;
+  padding: 0 15px;
   font-size: 16px;
 }
 #navbar_container ul li a:hover {
   color: #0167ff;
+}
+.nav_hamburgher {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -42px;
 }
 .angle:after {
     font-family: 'Glyphicons Halflings';
@@ -112,7 +121,7 @@ nav {
   line-height: 600px;
 }
 #developers img {
-  height: 100%;
+  width: 80%;
 }
 #developers .img_carosello::before {
   font-family: 'Glyphicons Halflings';
@@ -147,6 +156,9 @@ nav {
 }
 
 /* TEAMS */
+#teams img {
+  width: 80%;
+}
 #teams .img_carosello::before {
   font-family: 'Glyphicons Halflings';
   content: "\e079";
@@ -175,4 +187,16 @@ footer ul {
 }
 .footer_link_title {
   font-weight: bold;
+}
+
+/* MEDIA QUERY */
+@media all and (max-width: 991px) {
+  .nav_right, .nav_left {
+
+    display: none;
+  }
+  .nav_hamburgher {
+    display: block;
+  }
+
 }
