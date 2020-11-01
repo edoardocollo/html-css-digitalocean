@@ -5,8 +5,8 @@ body {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 47px;
+.jumbotron_title {
+  font-size: 60px;
 }
 h2{
   color: #031c4e;
@@ -24,6 +24,12 @@ h3 {
 }
 h4 {
   color: #031c4e;
+}
+a {
+  color: #006aff;
+}
+a::after {
+  content: '>';
 }
 /* UTILITY */
 .relative {
@@ -111,7 +117,10 @@ nav {
   font-size: 16px;
 }
 #navbar_container ul li a:hover {
-  color: #0167ff;
+  color: white;
+  background-color: #0269FF;
+  transition: background-color 0.25s linear,border-color 0.25s linear,color 0.25s linear;
+  border-color: #0269FF;
 }
 .nav_hamburgher {
   font-size: 20px;
@@ -134,7 +143,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position:right;
-  font-size: 10px;
+  font-size: 16px;
 }
 
   /* width: 100%;
@@ -149,11 +158,20 @@ nav {
   display: none;
 }
 .link_form {
-  font-size: 24px;
+  font-size: 30px;
+}
+#jumbotron_form a::after {
+  content: '';
 }
 .terms {
   font-size: 10px;
   margin-top: 20px;
+}
+.form_motto {
+display: block;
+font-size: 30px;
+color: #031c4e;
+
 }
 .glogo {
   display: block;
@@ -177,7 +195,7 @@ nav {
   line-height: 600px;
 }
 #developers img {
-  width: 80%;
+  width: 70%;
 }
 #developers .img_carosello::before {
   font-family: 'Glyphicons Halflings';
@@ -213,21 +231,21 @@ nav {
 #service > .container > .row > .col-lg-6 .row:not(:last-child) {
   border-bottom: 1px solid white;
 }
-#service > .container > .row > .col-lg-6  [class$="-2"] {
+#service > .container > .row > .col-lg-6  [class*="col-"]:first-child {
   font-weight: bold;
 }
-#service > .container > .row > .col-lg-6  [class$="-7"] {
+#service > .container > .row > .col-lg-6  [class*="col-"]:nth-child(2) {
   color: #7a859d;
 }
-#service > .container > .row > .col-lg-6  [class$="-3"] a {
+#service > .container > .row > .col-lg-6 a {
   color: #00d5d1;
 }
-#service > .container > .row > .col-lg-6  [class$="-3"] a::after {
-  content: " >"
+#service > .container > .row > .col-lg-6 a::after {
+  color: #00d5d1;
 }
 /* TEAMS */
 #teams img {
-  width: 80%;
+  width: 70%;
   margin-bottom: 30px;
 }
 #teams .img_carosello::before {
@@ -244,6 +262,9 @@ nav {
 /* GET STARTED */
 .btn_start {
   color: #006aff ;
+}
+.btn_start:hover {
+  background: white;
 }
 
 /* FOOTER */
@@ -286,37 +307,24 @@ footer p {
   }
 
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
+  }
+.jumbotron_title {
+  font-size: 35px !important;
   }
   h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
   h3 {
-    color: #7a859d;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  .terms {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 15px;
   }
   #teams .img_carosello::before, #developers .img_carosello::before {
     display: none;
-    font-family: 'Glyphicons Halflings';
-    content: "\e079";
-    font-size: 30px;
   }
   #teams .img_carosello::after, #developers .img_carosello::after {
     display: none;
-    font-family: 'Glyphicons Halflings';
-    content: "\e080";
-    font-size: 30px;
   }
 
 }
