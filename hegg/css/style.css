@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: 'Sedgwick Ave Display', cursive;
+  background-color: black;
+}
+.fl {
+  float: left;
+}
+
+video {
+  opacity: 0.4;
+  height: 600px;
+  z-index: 1000;
+}
+header {
+  height: 800px;
+  background-color: black;
+}
+.videocontainer {
+  position: relative;
+  width: 1298px;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.videobg {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  width: 1298px;
+
+  background: rgb(230,218,63);
+ background: radial-gradient(circle at bottom, rgba(230,218,63,1) 0%, rgba(238,64,3,1) 13%, rgba(0,7,9,1) 56%);
+}
+.test {
+  height: 800px;
+  background-image: image('../img/matrix.mp4');
+}
+.samurai {
+  z-index: 1000;
+  position: absolute;
+  bottom: -50px;
+  left: 70%;
+  height: 300px;
+}
+.guerrilla {
+  position: absolute;
+  left: 40%;
+  bottom: -110px;
+}
+.ninja {
+  z-index: 1000;
+  position: absolute;
+  left: -30px;
+  bottom: -450px;
+
+}
+.dev {
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dev2 {
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  right: 5%;
+  top: 16%;
+}
+.bacheca {
+  height: 600px;
+  background-image: url(../img/lamiera.jpg);
+  background-size: cover;
+  background-color: black;
+  background-blend-mode: hard-light;
+}
+.note img{
+  height: 300px;
+}
+footer {
+  text-align: center;
+  padding-top: 100px;
+}
