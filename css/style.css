@@ -28,6 +28,9 @@ h4 {
 a {
   color: #006aff;
 }
+a:hover {
+  text-decoration: none;
+}
 a::after {
   content: '>';
 }
@@ -61,9 +64,8 @@ a::after {
   background-color: #031c4e;
 }
 .bg_gradient {
-  background: rgb(0,72,198);
-background: linear-gradient(108deg, rgba(0,72,198,1) 35%, rgba(0,32,155,1) 100%);
-}
+  background: rgb(2,42,110);
+ background: linear-gradient(162deg, rgba(2,42,110,1) 0%, rgba(0,98,236,1) 31%, rgba(0,106,255,1) 47%, rgba(0,97,235,1) 71%, rgba(3,28,78,1) 100%); }
 .text_white {
   color: white;
 }
@@ -121,7 +123,7 @@ nav {
 #navbar_container ul li a {
   text-decoration: none;
   color: black;
-  padding: 0 15px;
+  padding: 10px 15px;
   font-size: 16px;
 }
 #navbar_container ul li a::after {
@@ -142,6 +144,20 @@ nav {
 .angle:after {
     font-family: 'Glyphicons Halflings';
     content: "\e114";
+}
+.sign_up {
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 2px solid #006aff;
+}
+.sign_up:hover {
+  background-color: #006aff;
+}
+.sign_up a {
+  color: #006aff !important;
+}
+.sign_up a:hover {
+  color: white !important;
 }
 
 
