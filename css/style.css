@@ -401,3 +401,19 @@ footer p {
   }
 
 }
+@media all and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 18px ;
+  }
+
+}
