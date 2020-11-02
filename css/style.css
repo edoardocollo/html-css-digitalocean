@@ -3,8 +3,8 @@ body {
   color: #5c6a88;
   font-size: 14px;
   font-weight: 400;
+  background-color: #031c4e;
 }
-
 .jumbotron_title {
   font-size: 60px;
 }
@@ -31,6 +31,8 @@ a {
 a::after {
   content: '>';
 }
+
+
 /* UTILITY */
 .relative {
   position: relative;
@@ -43,6 +45,7 @@ a::after {
 .p_big {
   font-size: 18px;
 }
+
 
 /* COLOR */
 .bg_white {
@@ -64,8 +67,9 @@ background: linear-gradient(108deg, rgba(0,72,198,1) 35%, rgba(0,32,155,1) 100%)
 .text_white {
   color: white;
 }
-/* MARGIN AND PADDING */
 
+
+/* MARGIN AND PADDING */
 .p_60 {
   padding: 60px 0;
 }
@@ -97,6 +101,10 @@ background: linear-gradient(108deg, rgba(0,72,198,1) 35%, rgba(0,32,155,1) 100%)
 
 /* NAVBAR */
 nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
   height: 65px;
   width: 100%;
 }
@@ -145,13 +153,8 @@ nav {
   background-repeat: no-repeat;
   background-position:right;
   font-size: 16px;
+  margin-top: 65px;
 }
-
-  /* width: 100%;
-  height: 400px;
-  background-color: yellow;
-  border: 1px solid black; */
-
 .col-lg-7.hfull {
   height: 350px;
 }
@@ -172,7 +175,6 @@ nav {
 display: block;
 font-size: 30px;
 color: #031c4e;
-
 }
 .glogo {
   display: block;
@@ -180,6 +182,132 @@ color: #031c4e;
   height: 20px;
 }
 
+
+/* PARTNERS */
+#partners img {
+  height: 100px;
+}
+
+
+/* SECTIONS */
+
+/* DEPLOY SECTION */
+
+
+/* DEVELOPERS */
+#developers .col_carosello {
+  height: 600px;
+  line-height: 600px;
+}
+#developers img {
+  width: 70%;
+}
+#developers .img_carosello::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e079";
+  font-size: 30px;
+}
+#developers .img_carosello::after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e080";
+  font-size: 30px;
+}
+.round {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 2px solid #006aff;
+  border-radius: 50%;
+}
+
+
+/* FEATURES */
+#features img {
+  height: 41px;
+}
+
+
+/* SERVICE */
+#service {
+  line-height: 40px;
+}
+#service .col-lg-3 {
+  text-align: right;
+}
+#service > .container > .row > .col-lg-6 .row:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+#service > .container > .row > .col-lg-6  [class*="col-"]:first-child {
+  font-weight: bold;
+}
+#service > .container > .row > .col-lg-6  [class*="col-"]:nth-child(2) {
+  color: #7a859d;
+}
+#service > .container > .row > .col-lg-6 a {
+  color: #00d5d1;
+}
+#service > .container > .row > .col-lg-6 a::after {
+  color: #00d5d1;
+}
+
+
+/* TEAMS */
+#teams img {
+  width: 70%;
+  margin-bottom: 30px;
+}
+#teams .img_carosello::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e079";
+  font-size: 30px;
+}
+#teams .img_carosello::after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e080";
+  font-size: 30px;
+}
+
+
+/* GET STARTED */
+.btn_start {
+  color: #006aff ;
+}
+.btn_start:hover {
+  background: white;
+}
+
+
+/* FOOTER */
+footer {
+  color: #7a859d;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: #a6adbd;
+}
+.footer_link_title {
+  font-weight: bold;
+}
+footer ul li a::after {
+  content: none;
+}
+footer .fab {
+  color: #7a859d;
+  font-size: 20px;
+  margin: 10px 5px;
+}
+footer img {
+  margin-bottom: 10px;
+}
+footer p {
+  margin: 0;
+  color: #a6adbd;
+}
 
 
 /* CHAT */
@@ -230,127 +358,10 @@ color: #031c4e;
   text-shadow: 0 0 3px black;
 
 }
-/* PARTNERS */
-#partners img {
-  height: 100px;
-}
-
-/* SECTIONS */
-
-/* DEPLOY SECTION */
 
 
-/* DEVELOPERS */
-#developers .col_carosello {
-  height: 600px;
-  line-height: 600px;
-}
-#developers img {
-  width: 70%;
-}
-#developers .img_carosello::before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e079";
-  font-size: 30px;
-}
-#developers .img_carosello::after {
-  font-family: 'Glyphicons Halflings';
-  content: "\e080";
-  font-size: 30px;
-}
-.round {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border: 2px solid #006aff;
-  border-radius: 50%;
-}
 
 
-/* FEATURES */
-#features img {
-  height: 41px;
-}
-
-/* SERVICE */
-#service {
-  line-height: 40px;
-}
-#service .col-lg-3 {
-  text-align: right;
-}
-#service > .container > .row > .col-lg-6 .row:not(:last-child) {
-  border-bottom: 1px solid white;
-}
-#service > .container > .row > .col-lg-6  [class*="col-"]:first-child {
-  font-weight: bold;
-}
-#service > .container > .row > .col-lg-6  [class*="col-"]:nth-child(2) {
-  color: #7a859d;
-}
-#service > .container > .row > .col-lg-6 a {
-  color: #00d5d1;
-}
-#service > .container > .row > .col-lg-6 a::after {
-  color: #00d5d1;
-}
-/* TEAMS */
-#teams img {
-  width: 70%;
-  margin-bottom: 30px;
-}
-#teams .img_carosello::before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e079";
-  font-size: 30px;
-}
-#teams .img_carosello::after {
-  font-family: 'Glyphicons Halflings';
-  content: "\e080";
-  font-size: 30px;
-}
-
-/* GET STARTED */
-.btn_start {
-  color: #006aff ;
-}
-.btn_start:hover {
-  background: white;
-}
-
-/* FOOTER */
-footer {
-  color: #7a859d;
-}
-
-footer ul {
-  padding: 0;
-}
-footer ul li {
-  list-style: none;
-}
-footer ul li a {
-  color: #a6adbd;
-}
-.footer_link_title {
-  font-weight: bold;
-}
-footer ul li a::after {
-  content: none;
-}
-footer .fab {
-  color: #7a859d;
-  font-size: 20px;
-  margin: 10px 5px;
-
-}
-footer img {
-  margin-bottom: 10px;
-}
-footer p {
-  margin: 0;
-  color: #a6adbd;
-}
 /* MEDIA QUERY */
 @media all and (max-width: 991px) {
   .nav_right, .nav_left {
@@ -359,14 +370,11 @@ footer p {
   .nav_hamburgher {
     display: block;
   }
-  .chat_container {
-    display: none;
-  }
-  .chat_container2 {
-    display: block;
-  }
   .chat_box {
     float: left;
+  }
+  .chat_panel::after {
+    content: none;
   }
   .panel_container, .gorilla_cage {
     float: left;
@@ -376,6 +384,32 @@ footer p {
     bottom: 0;
     left: 0;
   }
+  footer {
+    margin-bottom: 100px;
+  }
+}
+@media all and (max-width: 350px) {
+  .bot_container {
+    display: none;
+  }
+  .col-lg-7.hfull {
+    height: 450px;
+  }
+
+}
+@media all and (max-width: 580px) {
+.bot_container {
+  bottom: 100px;
+}
+.chat_panel {
+  width: 300px;
+}
+footer {
+  margin-bottom: 140px;
+}
+
+}
+
 }
 @media all and (max-width: 767px) {
   body {
