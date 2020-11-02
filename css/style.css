@@ -116,10 +116,11 @@ nav {
   padding: 0 15px;
   font-size: 16px;
 }
+#navbar_container ul li a::after {
+  content: none;
+}
 #navbar_container ul li a:hover {
-  color: white;
-  background-color: #0269FF;
-  transition: background-color 0.25s linear,border-color 0.25s linear,color 0.25s linear;
+  color: #0269FF;
   border-color: #0269FF;
 }
 .nav_hamburgher {
@@ -178,65 +179,57 @@ color: #031c4e;
   float: left;
   height: 20px;
 }
+
+
+
 /* CHAT */
-.chat_container {
-  width: 100%;
+.bot_container {
   position: fixed;
   bottom: 0;
+  right: 0;
+  height: 100px;
   z-index: 1000;
-}
-.chat_container::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.chat_container2 {
-  display: none;
-  position: fixed;
-  bottom: 10%;
-  z-index: 1000;
-}
-.chat_box {
-  float: right;
-  width: 500px;
-  height: 80px;
-
-}
-.chat_panel {
-  position: relative;
-  box-shadow: 0 0 3px black;
-}
-.chat_panel::after {
-  position: absolute;
-  right: -12px;
-  top: 50%;
-  content: "\25b6"
 }
 .gorilla_cage {
   position: relative;
-  height: 85px;
-  width: 85px;
+  float: right;
+  height: 90px;
+  width: 90px;
+  margin: 0 20px;
 }
-.gorilla {
+.gorilla_cage img {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 70px;
-  border: 3px solid #0069ff;
-
+  height: 80px;
+  border: 3px solid black;
 }
-.gorilla_badge {
+.chat_badge {
   position: absolute;
   top: 0;
   right: 0;
   background-color: red;
-  border: 4px solid white;
+  border: 3px solid black;
+}
+.chat_panel {
+  width: 400px;
+  margin: 20px 20px;
+  box-shadow: 0 0 3px black;
+}
+.panel_container {
+  float: right;
+  width: 430px;
+  position: relative;
+}
+.chat_panel::after {
+  color: white;
+  content: "\25b6";
+  position: absolute;
+  right: -2px;
+  bottom: 50%;
+  text-shadow: 0 0 3px black;
 
 }
-
-
-
-
 /* PARTNERS */
 #partners img {
   height: 100px;
@@ -342,6 +335,9 @@ footer ul li a {
 .footer_link_title {
   font-weight: bold;
 }
+footer ul li a::after {
+  content: none;
+}
 footer .fab {
   color: #7a859d;
   font-size: 20px;
@@ -372,7 +368,14 @@ footer p {
   .chat_box {
     float: left;
   }
-
+  .panel_container, .gorilla_cage {
+    float: left;
+  }
+  .bot_container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
 }
 @media all and (max-width: 767px) {
   body {
