@@ -208,6 +208,22 @@ color: #031c4e;
 /* SECTIONS */
 
 /* DEPLOY SECTION */
+#deploy_nav li {
+  list-style: none;
+  color: lightgray;
+  font-size: 20px;
+  border-left: 2px solid lightgray;
+  padding: 10px 20px;
+}
+#deploy_nav li a {
+  color: #5c6a88;
+}
+#deploy_nav li a::after {
+  content: none;
+}
+#deploy_nav li:hover {
+  border: 0;
+}
 
 
 /* DEVELOPERS */
@@ -430,6 +446,9 @@ footer {
 @media all and (max-width: 767px) {
   body {
     font-size: 12px;
+  }
+  .p_40 {
+    padding: 40px 0 !important;
   }
 .jumbotron_title {
   font-size: 35px !important;
